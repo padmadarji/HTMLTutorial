@@ -1,9 +1,155 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-    First H1TML Web Page
-  </title>
-  </head>
-  <h1>HTML - Hypertext Markup Language</h1>
- .<p>HTML (Markup Language): Used to structure and format content. It defines what the content is (e.g., a heading, a paragraph, or a link) but cannot perform logical operations, calculations, or data processing on its own.</p>
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body bgcolor="#800000" text="#ffffff">
+
+    <form>
+        <table align="center" width="700" cellpadding="10">
+
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Student Registration Form</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Roll no. :</td>
+                <td><input type="text" size="50" /></td>
+            </tr>
+
+            <tr>
+                <td>Student name :</td>
+                <td>
+                    <input type="text" size="21" Placeholder="First Name" />
+                    -
+                    <input type="text" size="21" Placeholder="Last Name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Father's name :</td>
+                <td><input type="text" size="50" /></td>
+            </tr>
+
+            <tr>
+                <td>Date of birth :</td>
+                <td>
+                    <input type="text" size="3" Placeholder="Day" /> -
+                    <input type="text" size="3" Placeholder="Month" /> -
+                    <input type="text" size="8" Placeholder="Year" />
+                    <i>(DD-MM-YYYY)</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile no. :</td>
+                <td>
+                    <input type="text" size="1" value="+91" /> -
+                    <input type="text" size="42" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email id :</td>
+                <td><input type="text" size="50" /></td>
+            </tr>
+
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" size="50" /></td>
+            </tr>
+
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" name="g" /> Male
+                    <input type="radio" name="g" /> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Department :</td>
+                <td>
+                    <input type="checkbox" /> BTech
+                    <input type="checkbox" /> MTech
+                    <input type="checkbox" /> MCA
+                    <input type="checkbox" /> CSE
+                    <input type="checkbox" /> IT
+                    <input type="checkbox" /> ECE
+                    <input type="checkbox" /> Civil
+                    <input type="checkbox" /> Mech
+                    <input type="checkbox" /> BCA
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course :</td>
+                <td><select>
+                        <option> ---------------------- Select Current Course's ------------------------ </option>
+                        <option>Python</option>
+                        <option>Node</option>
+                        <option>Java</option>
+                        <option>React</option>
+                        <option>PHP</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Student photo :</td>
+                <td><input type="file" /></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea cols="48" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>City :</td>
+                <td> <select name="city" id="city">
+                        <option value=""> ---------------------- Select City ------------------------
+                        </option>
+                        <option value="Amdavad">Amdavad </option>
+                        <option value="Bhavanagar">Bhavanagar </option>
+                        <option value="Rajkot">Rajkot </option>
+                        <option value="Surat">Surat </option>
+                        <option value="Navsari">Navsari </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Country :</td>
+                <td>
+                    <select name="country" id="country">
+                        <option value=""> ---------------------- Select Country ------------------------
+                        </option>
+                        <option value="Bharat">Bharat </option>
+                        <option value="Canada">Canada </option>
+                        <option value="Japan">Japan </option>
+                        <option value="Russia">Russia </option>
+                        <option value="Austrailia">Australia </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pincode :</td>
+                <td><input type="pincode" size="50" /></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register" />
+                    <input type="submit" name="reset" id="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
 </html>
