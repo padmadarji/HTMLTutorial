@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML5: Form Controls and validation</title>
+</head>
+
+<body>
+	<div>
+		<a href="home.html" title="Go to Home Page" style="cursor: pointer;">Click here to Go Home page</a>
+	</div>
+	<H1>HTML5: Form Controls and validation</H1>
+	<form action="http://www.example.com/login/" method="post">
+		<p>
+			<label for="username">Username:</label>
+			<input type="text" name="username" required="required" />
+		</p>
+		<p><label for="password">Password:</label>
+			<input type="password" name="password" required="required" />
+		</p>
+		<p><label for="username">Departure date:</label>
+			<input type="date" name="depart" />
+		</p>
+		<p>
+			<lable for="email">Please enter your email address:</label>
+				<input type="email" name="email" />
+		</p>
+		<p><label>Please enter your website address:</label>
+			<input type="url" name="website" />
+		</p>
+		<p><label for="time">Choose a time:</label>
+			<input type="time" id="time" name="time">
+		</p>
+		<p><label for="range">Choose a range:</label>
+			<input type="range" id="range" name="range" min="0" max="100" value="50">
+		</p>
+		<p><label for="color-picker">Choose a color:</label>
+			<input type="color" id="color-picker" name="color-picker" value="#ff0000">
+		</p>
+		<p><label for="search-bar">Search:</label>
+			<input type="text" id="search-bar" name="search-bar" autocomplete="on">
+		</p>
+		<p><input type="submit" value="Submit" /></p>
+	</form>
+	<h1>Search</h1>
+	<form action="http://www.example.org/search.php">
+		<p>Search:</p>
+		<input type="search" name="search" placeholder="Enter keyword" />
+		<input type="submit" value="Search" />
+	</form>
+</body>
+
+</html>

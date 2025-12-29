@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog Manager</title>
+</head>
+
+<body>
+    <div>
+        <a href="home.html" title="Go to Home Page" style="cursor: pointer;">Click here to Go Home page</a>
+    </div>
+    <h1>Update Product Catalog</h1>
+    <form action="/update-catalog" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Product Information</legend>
+
+            <!-- Use type="search" for product lookup with auto-complete -->
+            <label for="prod-search">Search Existing Products:</label>
+            <input type="search" id="prod-search" name="search" list="product-list" placeholder="Start typing name...">
+            <datalist id="product-list">
+                <option value="Wireless Headphones">
+                <option value="Smart Watch Pro">
+                <option value="USB-C Charging Hub">
+            </datalist>
+
+            <!-- Text and Textarea for names and descriptions -->
+            <label for="prod-name">New Product Name:</label>
+            <input type="text" id="prod-name" name="product_name" required>
+
+            <label for="prod-desc">Description:</label>
+            <textarea id="prod-desc" name="description" rows="3"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inventory & Pricing</legend>
+
+            <!-- Number input with step for currency -->
+            <label for="price">Unit Price (&#8377;):</label>
+            <input type="number" id="price" name="price" min="100.00" step="50" required>
+
+            <!-- Range input for rating/quality score -->
+            <label for="quality">Initial Quality Rating (1-10):</label>
+            <input type="range" id="quality" name="quality" min="1" max="10" value="5">
+
+            <!-- Color picker for product variation -->
+            <label for="color">Primary Color Variation:</label>
+            <input type="color" id="color" name="primary_color" value="#ff0000">
+
+            <!-- URL for documentation or manufacturer site -->
+            <label for="manual-url">Instruction Manual URL:</label>
+            <input type="url" id="manual-url" name="manual_url" placeholder="https://example.com">
+        </fieldset>
+
+        <fieldset>
+            <legend>Logistics</legend>
+
+            <!-- Date input for restocking schedule -->
+            <label for="restock-date">Next Restock Date:</label>
+            <input type="date" id="restock-date" name="restock_date">
+
+            <!-- File input for product images -->
+            <label for="prod-image">Upload Product Photo:</label>
+            <input type="file" id="prod-image" name="product_image" accept="image/*">
+        </fieldset>
+
+        <button type="submit">Add to Catalog</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</body>
+
+</html>

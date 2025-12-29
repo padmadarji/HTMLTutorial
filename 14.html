@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Table Border & Background</title>
+</head>
+
+<body>
+	<div>
+		<a href="home.html" title="Go to Home Page" style="cursor: pointer;">Click here to Go Home page</a>
+	</div>
+	<ul>
+		<li>The &lt;table&gt; element is used to add tables to a web
+			page.</li>
+		<li>A table is drawn out row by row. Each row is created
+			with the &lt;tr&gt; element.</li>
+		<li>Inside each row there are a number of cells
+			represented by the &lt;td&gt; element (or &lt;th&gt; if it is a
+			header).</li>
+		<li>You can make cells of a table span more than one row
+			or column using the rowspan and colspan attributes.</li>
+		<li>For long tables you can split the table into a &lt;thead&gt;,
+			&lt;tbody&gt;, and &lt;tfoot&gt;.</li>
+	</ul>
+	<table border="2" bgcolor="#efefef" cellpadding="10" cellspacing="5">
+		<caption>Monthly Balance Report</caption>
+		<tr>
+			<th width="150"></th>
+			<th>Withdrawn</th>
+			<th>Credit</th>
+			<th width="150" bgcolor="#cccccc">Balance</th>
+		</tr>
+		<tr>
+			<th>January</th>
+			<td>250.00</td>
+			<td>660.50</td>
+			<td bgcolor="#cccccc">410.50</td>
+		</tr>
+		<tr>
+			<th>February</th>
+			<td>135.55</td>
+			<td>895.20</td>
+			<td bgcolor="#cccccc">1170.15</td>
+		</tr>
+	</table>
+	<hr />
+	<h1>Example</h1>
+	<hr />
+	<table border="2" bgcolor="#efefef" cellpadding="10" cellspacing="5">
+		<thead>
+			<tr>
+				<th></th>
+				<th scope="col">Home starter hosting</th>
+				<th scope="col">Premium business hosting</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">Disk space</th>
+				<td>250mb</td>
+				<td>1gb</td>
+			</tr>
+			<tr>
+				<th scope="row">Bandwidth</th>
+				<td>5gb per month</td>
+				<td>50gb per month</td>
+			</tr>
+			<!-- more rows like the two above here -->
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td colspan="2">Sign up now and save 10%!</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>

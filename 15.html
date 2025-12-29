@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form</title>
+</head>
+
+<body>
+	<div>
+		<a href="home.html" title="Go to Home Page" style="cursor: pointer;">Click here to Go Home page</a>
+	</div>
+	<h1>Form</h1>
+	<p>Traditionally, the term 'form' has referred
+		to a printed document that contains
+		spaces for you to fill in information.</p>
+	<p>HTML borrows the concept of a form to refer to different
+		elements that allow you to collect information from visitors to
+		your site.</p>
+	<p>Whether you are adding a simple search box to your website or
+		you need to create more complicated insurance applications,
+		HTML forms give you a set of elements to collect data from
+		your users.</p>
+	<ul>
+
+		<li>How to collect information from visitors</li>
+		<li>Different kinds of form controls</li>
+		<li>New HTML5 form controls</li>
+	</ul>
+	<h2>Form Controls</h2>
+
+	<h3>ADDING TEXT:</h3>
+	<ul>
+		<li>Text input (single-line)
+			<p>Used for a single line of text such
+				as email addresses and names.</p>
+			<p>
+				<input />
+			</p>
+		</li>
+
+		<li>Password input
+			<p>Like a single line text box but it
+				masks the characters entered.</p>
+			<p>
+				<input type="password" />
+			</p>
+		</li>
+
+		<li>Text area (multi-line)
+			<p>For longer areas of text, such as
+				messages and comments.</p>
+			<p>
+				<textarea></textarea>
+			</p>
+		</li>
+
+	</ul>
+	<h3>Making Choices:</h3>
+	<ul>
+		<li>Radio buttons
+			<p>For use when a user must select
+				one of a number of options.</p>
+			<p>
+				<input type="radio" name="gender">Female
+				<input type="radio" name="gender">Male
+			</p>
+		</li>
+
+		<li>Checkboxes
+			<p>When a user can select and
+				unselect one or more options.</p>
+			<p>
+				<input type="checkbox" name="course">Data Analytics
+				<input type="checkbox" name="course">Data Science With AI and ML
+				<input type="checkbox" name="course">Full Stack Development
+			</p>
+		</li>
+
+		<li>Drop-down boxes
+			<p>When a user must pick one of a
+				number of options from a list.</p>
+			<p>
+				<select>
+					<option>Amdavad</option>
+					<option>Baroda</option>
+					<option>Rajkot</option>
+					<option>Surat</option>
+					<option>Bhavnagar</option>
+				</select>
+
+			</p>
+		</li>
+
+	</ul>
+	<h3>Submitting Forms:</h3>
+	<ul>
+		<li>Submit buttons
+			<p>To submit data from your form
+				to another web page.</p>
+			<p><input type="submit" value="Subscribe"></input></p>
+		</li>
+
+		<li>Image buttons
+			<p>Similar to submit buttons but
+				they allow you to use an image.</p>
+			<p>
+				<input type="image" src="images/subscribe.jpg" />
+			</p>
+		</li>
+		<li>Buttons
+			<p>You can also submit form on button click event</p>
+			<p>
+				<input type="button" value="Register" />
+			</p>
+		</li>
+
+	</ul>
+	<h3>Uploading Files:</h3>
+	<p>Allows users to upload files
+		(e.g. images) to a website.</p>
+	<ul>
+		<li>File upload</li>
+	</ul>
+
+	<p>
+	<h1>How form works?</h1>
+	<ol>
+		<li>A user fills in a form and then presses a button
+			to submit the information to the server.</li>
+		<li>The name of each form
+			control is sent to the
+			server along with the
+			value the user enters or
+			selects.</li>
+		<li>The server processes
+			the information using a
+			programming language
+			such as PHP, C#, VB.net,
+			or Java. It may also store
+			the information in a
+			database.</li>
+		<li>The server creates a new
+			page to send back to the
+			browser based on the
+			information received.</li>
+	</ol>
+	</p>
+	<h2>For Example:</h2>
+
+	<p>Enter your name : <input type="text" name="username"></p>
+	<p>Enter your message : <input type="text" name="message"></p>
+	<p><input type="submit" value="Submit"></p>
+	<p>A form may have several form controls, each
+		gathering different information. The server
+		needs to know which piece of inputted data
+		corresponds with which form element.</p>
+	<p>To differentiate between various pieces of inputted data, information
+		is sent from the browser to the server using name/value pairs. In this
+		example, the form asks for the visitior's username and also for their
+		greet message. The name/value pairs sent to the server are:</p>
+	<pre>
+	username=krishna  
+	message=hello</pre>
+</body>
+
+</html>

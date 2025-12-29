@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <div>
+        <a href="home.html" title="Go to Home Page" style="cursor: pointer;">Click here to Go Home page</a>
+    </div>
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="POST">
+
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required> <!-- The 'email' type provides basic email validation -->
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10-digit number" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="-1">Select a course...</option>
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            <option value="btech">B.Tech</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset Form">
+    </form>
+
+</body>
+
+</html>
